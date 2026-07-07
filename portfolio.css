@@ -3,25 +3,26 @@
   --cream:   #FDFBF7;
   --sand:    #F2EFE8;
   --bark:    #F0B138;
-  --bark-dk: #E09F2A;
-  --ink:     #1C3A2F;
-  --ink-lt:  #4A6559;
+  --bark-dk: #d49520;
+  --ink:     #295947;
+  --ink-lt:  #486357;
   --white:   #FFFFFF;
-  --accent:  #2C7A6B;
-  --accent-hover: #1F5C50;
-  --radius:  12px;
+  --accent:  #237a69;
+  --accent-hover: rgb(22, 81, 69);
+  --radius:  10px;
   --font-display: 'Cormorant Garamond', serif;
   --font-body:    'Jost', sans-serif;
 }
 
 /* ─── RESET ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 body {
   font-family: var(--font-body);
   background: var(--cream);
   color: var(--ink);
   overflow-x: hidden;
+  width: 100%;
   font-weight: 300;
 }
 a { text-decoration: none; color: inherit; }
@@ -96,7 +97,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(28,58,47,0.08); }
 /* hamburger */
 .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
 .nav-toggle span { width: 24px; height: 1.5px; background: var(--accent); transition: all 0.3s; display: block; }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-links { display: none; }
   .nav-cta   { display: none; }
   .nav-toggle { display: flex; }
@@ -366,18 +367,21 @@ section { padding: 7rem 5%; }
 .about-img-wrap {
   position: relative;
 }
-.about-img {
+.about-img-wrap img {
+  border-radius: 10px;
   width: 100%; aspect-ratio: 3/4; object-fit: cover;
   background: var(--sand);
 }
 .about-img-placeholder {
   width: 100%; aspect-ratio: 3/4;
+  border-radius: 30px;
   background: linear-gradient(160deg, var(--sand) 0%, #CBD5E0 100%);
   display: flex; align-items: center; justify-content: center;
   color: var(--bark-dk);
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1rem;
+  overflow: hidden;
 }
 /* decorative starburst */
 .about-burst {
@@ -386,7 +390,7 @@ section { padding: 7rem 5%; }
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80 0 L83 74 L160 80 L83 86 L80 160 L77 86 L0 80 L77 74 Z' fill='%23A0AEC0' opacity='0.3'/%3E%3Cpath d='M80 20 L82 74 L140 80 L82 86 L80 140 L78 86 L20 80 L78 74 Z' fill='none' stroke='%23A0AEC0' stroke-width='1' opacity='0.5'/%3E%3C/svg%3E");
   background-size: contain; background-repeat: no-repeat;
   pointer-events: none;
-  animation: spin-slow 20s linear infinite;
+  animation: spin-slow 25s linear infinite;
 }
 .about-content { }
 .about-body {
@@ -415,7 +419,7 @@ section { padding: 7rem 5%; }
   flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .about { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 5%; }
 }
 
@@ -482,7 +486,7 @@ section { padding: 7rem 5%; }
   color: var(--ink-lt);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
   .experience { padding: 5rem 5%; }
 }
@@ -549,14 +553,16 @@ section { padding: 7rem 5%; }
 .btn-show-more.open .arrow { transform: rotate(180deg); }
 .project-card {
   background: var(--white);
-  border: 1px solid rgba(160,174,192,0.25);
+  border: 1px solid rgba(28, 58, 47, 0.15);
+  border-radius: var(--radius);
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   cursor: pointer;
 }
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 48px rgba(28,58,47,0.1);
+  border-color: var(--bark);
+  box-shadow: 0 16px 48px rgba(28, 58, 47, 0.1);
 }
 .project-img {
   aspect-ratio: 16/9;
@@ -634,7 +640,7 @@ section { padding: 7rem 5%; }
 .resume-section .section-title { color: var(--cream); }
 .resume-section .section-title em { color: var(--bark); }
 .resume-section .divider { background: var(--bark); }
-.resume-section .about-body { color: rgba(253,251,247,0.94); }
+.resume-section .about-body { color: rgb(253, 251, 247); }
 .resume-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -701,7 +707,7 @@ section { padding: 7rem 5%; }
 }
 .btn-outline-light:hover { background: var(--accent); color: var(--white); border-color: var(--accent); }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .resume-inner { grid-template-columns: 1fr; gap: 2rem; }
   .resume-section { padding: 5rem 5%; }
 }
