@@ -11,8 +11,7 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY portfolio.html /usr/share/nginx/html/index.html
 COPY portfolio.css  /usr/share/nginx/html/portfolio.css
 COPY portfolio.js   /usr/share/nginx/html/portfolio.js
-COPY *.png /usr/share/nginx/html/
-COPY *.jpg /usr/share/nginx/html/
+COPY images/ /usr/share/nginx/html/images/
 
 RUN cat > /etc/nginx/conf.d/default.conf << 'EOF'
 server {
