@@ -4,7 +4,7 @@
   --sand:         #F2EFE8;
   --bark:         #f6b439;
   --bark-dk:      #d89923;
-  --ink:          #2b644f;
+  --ink:          #207254;
   --ink-lt:       #466d5c;
   --white:        #f6f6f6;
   --accent:       #1b836e;
@@ -943,6 +943,10 @@ footer {
 
 @media (max-width: 800px) {
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .learning-card-stack:hover .card-1 { transform: translateY(-30px) rotate(-2deg); }
+  .learning-card-stack:hover .card-2 { transform: translateY(15px) rotate(1deg); }
+  .learning-card-stack:hover .card-3 { transform: translateY(55px) rotate(-1deg); }
+  .learning-card-stack:hover .card-4 { transform: translateY(85px) rotate(2deg); }
 }
 
 /* ══════════════════════════════════════════
