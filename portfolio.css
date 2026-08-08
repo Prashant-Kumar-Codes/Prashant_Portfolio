@@ -758,10 +758,10 @@ section { padding: 7rem 6%; position: relative; overflow-x: hidden; }
 .learning-card-stack .card-3 { top: 120px; transform: translateY(0) scale(0.92) rotate(2deg); z-index: 2; opacity: 0.9; }
 .learning-card-stack .card-4 { top: 180px; transform: translateY(0) scale(0.88) rotate(-1deg); z-index: 1; opacity: 0.85; }
 
-.learning-card-stack:hover .card-1 { transform: translateY(-15px) rotate(-3deg); }
-.learning-card-stack:hover .card-2 { transform: translateY(15px) rotate(1deg); }
-.learning-card-stack:hover .card-3 { transform: translateY(45px) rotate(-1deg); }
-.learning-card-stack:hover .card-4 { transform: translateY(75px) rotate(2deg); }
+.learning-card-stack:hover .card-1 { transform: translateY(-25px) rotate(-4deg); }
+.learning-card-stack:hover .card-2 { transform: translateY(10px) rotate(2deg); }
+.learning-card-stack:hover .card-3 { transform: translateY(40px) rotate(-1deg); }
+.learning-card-stack:hover .card-4 { transform: translateY(80px) rotate(4deg); }
 
 .stack-card-inner { display: flex; align-items: center; gap: 1.2rem; }
 .stack-icon-box {
