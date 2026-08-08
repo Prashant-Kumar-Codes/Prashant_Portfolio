@@ -3,588 +3,805 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prashant Kumar | Portfolio</title>
-  <link rel="stylesheet" href="portfolio.css?v=2"/>
+  <title>Prashant Kumar | AI & ML Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Prashant Kumar - AI Developer, Machine Learning Developer & Web Developer specializing in intelligent systems and scalable solutions." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome 6 for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+  <link rel="stylesheet" href="portfolio.css?v=4" />
   <script src="portfolio.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
 </head>
 <body>
 
   <!-- ── NAV ───────────────────────────────── -->
   <nav id="navbar">
-    <a href="#" class="nav-logo">Prashant Kumar</a>
+    <a href="#home" class="nav-logo">
+      <span class="logo-text">Prashant Kumar</span>
+      <span class="logo-dots">
+        <span class="dot emerald"></span>
+        <span class="dot gold"></span>
+      </span>
+    </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#resume">Resume</a></li>
+      <li><a href="#linkedin">LinkedIn</a></li>
+      <li><a href="#learning">Growth</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="#contact" class="nav-cta">Hire Me</a>
-    <div class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
     </div>
   </nav>
 
-  <!-- ── HERO ──────────────────────────────── -->
-  <section class="hero" id="home">
-    <div class="hero-left">
-      <p class="hero-eyebrow">AI Developer | Machine Learning Developer | Web Developer</p>
-      <h1 class="hero-heading">
-        Building <em>Intelligent</em><br>Systems
-      </h1>
-      <p class="hero-sub">that actually work.</p>
-      <p class="hero-desc">
-        Turning complex data into production-ready ML models and scalable AI solutions. From research to deployment — I bridge the gap between cutting-edge algorithms and real-world impact.
-      </p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View Projects →</a>
-        <a href="#contact" class="btn-secondary">Get in Touch</a>
-      </div>
-      <div class="hero-burst"></div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-img-wrap">
-        <img src="images/hero_img1.jpg">
-      </div>
-    </div>
-  </section>
+  <!-- ── MAIN CONTENT WRAPPER WITH AMBIENT LIGHTING ── -->
+  <main class="main-content">
 
-  <!-- ── TECH MARQUEE ────────────────────────── -->
-  <div class="tech-strip">
-    <div class="tech-track" id="techTrack">
+    <!-- Ambient Glow Orbs -->
+    <div class="glow-orb emerald-glow orb-1"></div>
+    <div class="glow-orb gold-glow orb-2"></div>
+    <div class="glow-orb emerald-glow orb-3"></div>
 
-      <!-- === SET 1 === -->
-      <!-- Scikit-learn -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="16" fill="#EDF2F7" stroke="#A0AEC0" stroke-width="1.2"/>
-          <path d="M10 25 Q15 11 20 20 Q25 29 30 15" stroke="#F7931E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          <circle cx="20" cy="20" r="2.8" fill="#29ABE2"/>
-        </svg>
-        <span>Scikit-Learn</span>
-      </div>
-      <!-- NumPy -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4" y="4" width="32" height="32" rx="3" fill="#4B8BBE" opacity="0.12" stroke="#4B8BBE" stroke-width="1.2"/>
-          <rect x="9" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
-          <rect x="22" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
-          <rect x="15.5" y="19" width="9" height="9" rx="1" fill="#013243"/>
-        </svg>
-        <span>NumPy</span>
-      </div>
-      <!-- Pandas -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="13" y="4" width="6" height="17" rx="3" fill="#130754"/>
-          <rect x="21" y="10" width="6" height="17" rx="3" fill="#E70488"/>
-          <rect x="13" y="23" width="6" height="13" rx="3" fill="#130754" opacity="0.4"/>
-          <rect x="21" y="29" width="6" height="7" rx="3" fill="#E70488" opacity="0.4"/>
-        </svg>
-        <span>Pandas</span>
-      </div>
-      <!-- PyTorch -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 4 L20 12 A11 11 0 1 1 11.8 15.8 L15.8 11.8 A6.5 6.5 0 1 0 20 14.5 L20 4Z" fill="#EE4C2C"/>
-          <circle cx="26.5" cy="13.5" r="2.5" fill="#EE4C2C"/>
-        </svg>
-        <span>PyTorch</span>
-      </div>
-      <!-- TensorFlow -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" fill="#FF6F00" opacity="0.12" stroke="#FF6F00" stroke-width="1.2"/>
-          <path d="M20 10 L20 30 M12 14.5 L28 14.5 M12 22.5 L28 22.5" stroke="#FF6F00" stroke-width="2.4" stroke-linecap="round"/>
-        </svg>
-        <span>TensorFlow</span>
-      </div>
-      <!-- HuggingFace -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="21" r="13" fill="#FFD21E" opacity="0.2" stroke="#FFD21E" stroke-width="1.2"/>
-          <circle cx="15" cy="18" r="2" fill="#2D2D2D"/>
-          <circle cx="25" cy="18" r="2" fill="#2D2D2D"/>
-          <path d="M14 26 Q20 32 26 26" stroke="#2D2D2D" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M16 10 C16 7 24 7 24 10" stroke="#2D2D2D" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        </svg>
-        <span>HuggingFace</span>
-      </div>
-      <!-- Python -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 4C12 4 10 8 10 13L10 17L20 17L20 19L8 19C5 19 4 22 4 27C4 32 6 36 14 36L16 36L16 31C16 28 18 26 20 26L26 26C29 26 30 24 30 21L30 13C30 8 28 4 20 4Z" fill="#3776AB" opacity="0.75"/>
-          <path d="M20 36C28 36 30 32 30 27L30 23L20 23L20 21L32 21C35 21 36 18 36 13C36 8 34 4 26 4L24 4L24 9C24 12 22 14 20 14L14 14C11 14 10 17 10 20L10 27C10 32 12 36 20 36Z" fill="#FFD43B" opacity="0.8"/>
-          <circle cx="16.5" cy="8.5" r="1.5" fill="white"/>
-          <circle cx="23.5" cy="31.5" r="1.5" fill="white"/>
-        </svg>
-        <span>Python</span>
-      </div>
-      <!-- MLflow -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 31 L13 11 L20 25 L27 15 L34 31" stroke="#0194E2" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="6"  cy="31" r="2.5" fill="#0194E2"/>
-          <circle cx="34" cy="31" r="2.5" fill="#0194E2"/>
-          <circle cx="20" cy="25" r="2"   fill="#0194E2"/>
-        </svg>
-        <span>MLflow</span>
-      </div>
-      <!-- Docker -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="5" y="16" width="22" height="14" rx="3" fill="#2496ED" opacity="0.15" stroke="#2496ED" stroke-width="1.2"/>
-          <rect x="8"  y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
-          <rect x="14" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
-          <rect x="20" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
-          <rect x="8"  y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
-          <rect x="14" y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
-          <path d="M30 22 C34 22 36 19 34 16 C33 14 30 14 29 15" stroke="#2496ED" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        </svg>
-        <span>Docker</span>
-      </div>
-      <!-- AWS -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 26 C8 24 6 20 8 16 C9 13 12 11 15 11.5 C16 9 18 7 21 7 C25 7 28 10 28 14 C30 14 33 16 33 19 C33 22 30 24 28 24 L12 24Z" fill="#FF9900" opacity="0.15" stroke="#FF9900" stroke-width="1.2"/>
-          <path d="M10 30 Q20 35 30 30" stroke="#FF9900" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M27 28 L30 30 L28 33" stroke="#FF9900" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span>AWS</span>
-      </div>
-      <!-- LangChain -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
-          <circle cx="28" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
-          <line x1="17" y1="20" x2="23" y2="20" stroke="#1C3A2F" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="7"  y1="20" x2="4"  y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
-          <line x1="33" y1="20" x2="36" y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span>LangChain</span>
-      </div>
-      <!-- FastAPI -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="15" fill="#009688" opacity="0.12" stroke="#009688" stroke-width="1.2"/>
-          <path d="M22 8 L14 22 L20 22 L18 32 L26 18 L20 18 Z" fill="#009688"/>
-        </svg>
-        <span>FastAPI</span>
+    <!-- ── HERO ──────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero-bg-name-wrapper">
+        <span class="bg-name-first">PRASHANT</span>
+        <span class="bg-name-last">KUMAR</span>
       </div>
 
-      <!-- === SET 2 (duplicate for seamless loop) === -->
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="16" fill="#EDF2F7" stroke="#A0AEC0" stroke-width="1.2"/>
-          <path d="M10 25 Q15 11 20 20 Q25 29 30 15" stroke="#F7931E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          <circle cx="20" cy="20" r="2.8" fill="#29ABE2"/>
-        </svg>
-        <span>Scikit-Learn</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4" y="4" width="32" height="32" rx="3" fill="#4B8BBE" opacity="0.12" stroke="#4B8BBE" stroke-width="1.2"/>
-          <rect x="9" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
-          <rect x="22" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
-          <rect x="15.5" y="19" width="9" height="9" rx="1" fill="#013243"/>
-        </svg>
-        <span>NumPy</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="13" y="4" width="6" height="17" rx="3" fill="#130754"/>
-          <rect x="21" y="10" width="6" height="17" rx="3" fill="#E70488"/>
-          <rect x="13" y="23" width="6" height="13" rx="3" fill="#130754" opacity="0.4"/>
-          <rect x="21" y="29" width="6" height="7" rx="3" fill="#E70488" opacity="0.4"/>
-        </svg>
-        <span>Pandas</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 4 L20 12 A11 11 0 1 1 11.8 15.8 L15.8 11.8 A6.5 6.5 0 1 0 20 14.5 L20 4Z" fill="#EE4C2C"/>
-          <circle cx="26.5" cy="13.5" r="2.5" fill="#EE4C2C"/>
-        </svg>
-        <span>PyTorch</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" fill="#FF6F00" opacity="0.12" stroke="#FF6F00" stroke-width="1.2"/>
-          <path d="M20 10 L20 30 M12 14.5 L28 14.5 M12 22.5 L28 22.5" stroke="#FF6F00" stroke-width="2.4" stroke-linecap="round"/>
-        </svg>
-        <span>TensorFlow</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="21" r="13" fill="#FFD21E" opacity="0.2" stroke="#FFD21E" stroke-width="1.2"/>
-          <circle cx="15" cy="18" r="2" fill="#2D2D2D"/>
-          <circle cx="25" cy="18" r="2" fill="#2D2D2D"/>
-          <path d="M14 26 Q20 32 26 26" stroke="#2D2D2D" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M16 10 C16 7 24 7 24 10" stroke="#2D2D2D" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        </svg>
-        <span>HuggingFace</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 4C12 4 10 8 10 13L10 17L20 17L20 19L8 19C5 19 4 22 4 27C4 32 6 36 14 36L16 36L16 31C16 28 18 26 20 26L26 26C29 26 30 24 30 21L30 13C30 8 28 4 20 4Z" fill="#3776AB" opacity="0.75"/>
-          <path d="M20 36C28 36 30 32 30 27L30 23L20 23L20 21L32 21C35 21 36 18 36 13C36 8 34 4 26 4L24 4L24 9C24 12 22 14 20 14L14 14C11 14 10 17 10 20L10 27C10 32 12 36 20 36Z" fill="#FFD43B" opacity="0.8"/>
-          <circle cx="16.5" cy="8.5" r="1.5" fill="white"/>
-          <circle cx="23.5" cy="31.5" r="1.5" fill="white"/>
-        </svg>
-        <span>Python</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 31 L13 11 L20 25 L27 15 L34 31" stroke="#0194E2" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="6"  cy="31" r="2.5" fill="#0194E2"/>
-          <circle cx="34" cy="31" r="2.5" fill="#0194E2"/>
-          <circle cx="20" cy="25" r="2"   fill="#0194E2"/>
-        </svg>
-        <span>MLflow</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="5" y="16" width="22" height="14" rx="3" fill="#2496ED" opacity="0.15" stroke="#2496ED" stroke-width="1.2"/>
-          <rect x="8"  y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
-          <rect x="14" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
-          <rect x="20" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
-          <rect x="8"  y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
-          <rect x="14" y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
-          <path d="M30 22 C34 22 36 19 34 16 C33 14 30 14 29 15" stroke="#2496ED" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        </svg>
-        <span>Docker</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 26 C8 24 6 20 8 16 C9 13 12 11 15 11.5 C16 9 18 7 21 7 C25 7 28 10 28 14 C30 14 33 16 33 19 C33 22 30 24 28 24 L12 24Z" fill="#FF9900" opacity="0.15" stroke="#FF9900" stroke-width="1.2"/>
-          <path d="M10 30 Q20 35 30 30" stroke="#FF9900" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M27 28 L30 30 L28 33" stroke="#FF9900" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span>AWS</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
-          <circle cx="28" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
-          <line x1="17" y1="20" x2="23" y2="20" stroke="#1C3A2F" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="7"  y1="20" x2="4"  y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
-          <line x1="33" y1="20" x2="36" y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span>LangChain</span>
-      </div>
-      <div class="tech-badge">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="15" fill="#009688" opacity="0.12" stroke="#009688" stroke-width="1.2"/>
-          <path d="M22 8 L14 22 L20 22 L18 32 L26 18 L20 18 Z" fill="#009688"/>
-        </svg>
-        <span>FastAPI</span>
-      </div>
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for New Projects &amp; Roles
+        </div>
+        <p class="hero-eyebrow">AI Developer | Machine Learning Developer | Web Developer</p>
+        <h1 class="hero-heading">
+          Building <span class="text-emerald">Intelligent</span><br>
+          <span class="text-gold">Systems</span>
+        </h1>
+        <p class="hero-sub">that actually work.</p>
+        <p class="hero-desc">
+          Turning complex data into production-ready ML models and scalable AI solutions. From research to deployment — I bridge the gap between cutting-edge algorithms and real-world impact.
+        </p>
 
-    </div>
-  </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            <span>View Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span>Get in Touch</span>
+          </a>
+        </div>
 
-  <!-- ── ABOUT ──────────────────────────────── -->
-  <section class="about" id="about">
-    <div class="about-img-wrap reveal">
-      <img src="images/profile_photo.jpg">
-      <div class="about-burst"></div>
-    </div>
-    <div class="about-content reveal">
-      <p class="section-label">AI Developer | Machine Learning | Web Developer</p>
-      <h2 class="section-title">Prashant <em>Kumar</em></h2>
-      <div class="divider"></div>
-      <p class="about-body">
-        I'm a B.Tech Computer Science student passionate about Artificial Intelligence, Machine Learning, and Full-Stack Development. I enjoy building intelligent applications that solve real-world problems using predictive models, data analysis, and scalable web technologies. My goal is to build AI-powered software that creates real impact while continuously expanding my expertise in machine learning and modern AI systems.
-      </p>
-      <div class="skills-grid">
-        <div class="skill-item">Python</div>
-        <div class="skill-item">Machine Learning</div>
-        <div class="skill-item">Scikit-learn</div>
-        <div class="skill-item">Flask &amp; FastAPI (Basics)</div>
-        <div class="skill-item">SQL</div>
-        <div class="skill-item">JavaScript (Basics)</div>
-        <div class="skill-item">Computer Vision</div>
-        <div class="skill-item">PyTorch (Basics)</div>
-        <div class="skill-item">LLMs (Basics)</div>
-        <div class="skill-item">AWS EC2</div>
-        <div class="skill-item">Git &amp; GitHub</div>
-        <div class="skill-item">REST APIs</div>
-      </div>
-      <a href="#contact" class="btn-secondary" style="margin-top:1.5rem;display:inline-block;">Work with me →</a>
-    </div>
-  </section>
-
-  <!-- ── EXPERIENCE ─────────────────────────── -->
-  <section class="experience" id="experience">
-    <p class="section-label reveal">Education &amp; Experience</p>
-    <h2 class="section-title reveal">Education &amp; Experience</h2>
-    <div class="divider reveal"></div>
-
-    <div class="exp-grid">
-      <div class="exp-item reveal">
-        <div class="exp-date">2023 — 2027</div>
-        <div class="exp-right">
-          <div class="exp-role">B.Tech Computer Science</div>
-          <div class="exp-company">Chandigarh Group of Colleges, Jhanjeri</div>
-          <p class="exp-desc">Pursuing a Bachelor's degree in Computer Science with coursework in Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Artificial Intelligence, and Machine Learning. <br><br><strong>CGPA: 8.0</strong></p>
-          <div class="exp-tags">
-            <span class="exp-tag">Python</span>
-            <span class="exp-tag">JavaScript</span>
-            <span class="exp-tag">C/C++</span>
-            <span class="exp-tag">DBMS</span>
-            <span class="exp-tag">OOP</span>
-            <span class="exp-tag">DSA</span>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="8.12">8.12</span>
+            <span class="stat-label">CGPA (B.Tech CSE)</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">3+</span>
+            <span class="stat-label">Featured Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="1">#1</span>
+            <span class="stat-label">Kaggle Rank</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="24">24+</span>
+            <span class="stat-label">DSA Solved</span>
           </div>
         </div>
       </div>
 
-      <!-- <div class="exp-item reveal">
-        <div class="exp-date">2023 — Present</div>
-        <div class="exp-right">
-          <div class="exp-role">Freelance Full-Stack Developer</div>
-          <div class="exp-company">Self-Employed</div>
-          <p class="exp-desc">Building and deploying responsive, database-driven web applications and REST APIs. Implementing user authentication, data models, and scalable architectures.</p>
-          <div class="exp-tags">
-            <span class="exp-tag">React</span>
-            <span class="exp-tag">Node.js</span>
-            <span class="exp-tag">Express</span>
-            <span class="exp-tag">MongoDB</span>
-            <span class="exp-tag">JWT</span>
-            <span class="exp-tag">Git</span>
+      <div class="hero-right">
+        <div class="hero-img-card glass-card">
+          <div class="hero-img-wrap">
+            <img src="images/hero_img1.jpg" alt="Prashant Kumar Hero Image" />
           </div>
         </div>
-      </div> -->
-    </div>
-  </section>
+        <div class="hero-burst"></div>
+      </div>
+    </section>
 
-  <!-- ── PROJECTS ───────────────────────────── -->
-  <section class="projects" id="projects">
-    <div class="projects-header reveal">
-      <div>
-        <p class="section-label">Portfolio</p>
-        <h2 class="section-title">Top <em>Projects</em></h2>
+    <!-- ── TECH MARQUEE STRIP ────────────────── -->
+    <div class="tech-strip">
+      <div class="tech-track" id="techTrack">
+        <!-- === SET 1 === -->
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="16" fill="#EDF2F7" stroke="#A0AEC0" stroke-width="1.2"/>
+            <path d="M10 25 Q15 11 20 20 Q25 29 30 15" stroke="#F7931E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="2.8" fill="#29ABE2"/>
+          </svg>
+          <span>Scikit-Learn</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="32" height="32" rx="3" fill="#4B8BBE" opacity="0.12" stroke="#4B8BBE" stroke-width="1.2"/>
+            <rect x="9" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
+            <rect x="22" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
+            <rect x="15.5" y="19" width="9" height="9" rx="1" fill="#013243"/>
+          </svg>
+          <span>NumPy</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="13" y="4" width="6" height="17" rx="3" fill="#130754"/>
+            <rect x="21" y="10" width="6" height="17" rx="3" fill="#E70488"/>
+            <rect x="13" y="23" width="6" height="13" rx="3" fill="#130754" opacity="0.4"/>
+            <rect x="21" y="29" width="6" height="7" rx="3" fill="#E70488" opacity="0.4"/>
+          </svg>
+          <span>Pandas</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4 L20 12 A11 11 0 1 1 11.8 15.8 L15.8 11.8 A6.5 6.5 0 1 0 20 14.5 L20 4Z" fill="#EE4C2C"/>
+            <circle cx="26.5" cy="13.5" r="2.5" fill="#EE4C2C"/>
+          </svg>
+          <span>PyTorch</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" fill="#FF6F00" opacity="0.12" stroke="#FF6F00" stroke-width="1.2"/>
+            <path d="M20 10 L20 30 M12 14.5 L28 14.5 M12 22.5 L28 22.5" stroke="#FF6F00" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span>TensorFlow</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="21" r="13" fill="#FFD21E" opacity="0.2" stroke="#FFD21E" stroke-width="1.2"/>
+            <circle cx="15" cy="18" r="2" fill="#2D2D2D"/>
+            <circle cx="25" cy="18" r="2" fill="#2D2D2D"/>
+            <path d="M14 26 Q20 32 26 26" stroke="#2D2D2D" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M16 10 C16 7 24 7 24 10" stroke="#2D2D2D" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span>HuggingFace</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4C12 4 10 8 10 13L10 17L20 17L20 19L8 19C5 19 4 22 4 27C4 32 6 36 14 36L16 36L16 31C16 28 18 26 20 26L26 26C29 26 30 24 30 21L30 13C30 8 28 4 20 4Z" fill="#3776AB" opacity="0.75"/>
+            <path d="M20 36C28 36 30 32 30 27L30 23L20 23L20 21L32 21C35 21 36 18 36 13C36 8 34 4 26 4L24 4L24 9C24 12 22 14 20 14L14 14C11 14 10 17 10 20L10 27C10 32 12 36 20 36Z" fill="#FFD43B" opacity="0.8"/>
+            <circle cx="16.5" cy="8.5" r="1.5" fill="white"/>
+            <circle cx="23.5" cy="31.5" r="1.5" fill="white"/>
+          </svg>
+          <span>Python</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 31 L13 11 L20 25 L27 15 L34 31" stroke="#0194E2" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="6"  cy="31" r="2.5" fill="#0194E2"/>
+            <circle cx="34" cy="31" r="2.5" fill="#0194E2"/>
+            <circle cx="20" cy="25" r="2"   fill="#0194E2"/>
+          </svg>
+          <span>MLflow</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="16" width="22" height="14" rx="3" fill="#2496ED" opacity="0.15" stroke="#2496ED" stroke-width="1.2"/>
+            <rect x="8"  y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
+            <rect x="14" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
+            <rect x="20" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
+            <rect x="8"  y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
+            <rect x="14" y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
+            <path d="M30 22 C34 22 36 19 34 16 C33 14 30 14 29 15" stroke="#2496ED" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span>Docker</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 26 C8 24 6 20 8 16 C9 13 12 11 15 11.5 C16 9 18 7 21 7 C25 7 28 10 28 14 C30 14 33 16 33 19 C33 22 30 24 28 24 L12 24Z" fill="#FF9900" opacity="0.15" stroke="#FF9900" stroke-width="1.2"/>
+            <path d="M10 30 Q20 35 30 30" stroke="#FF9900" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M27 28 L30 30 L28 33" stroke="#FF9900" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>AWS</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
+            <circle cx="28" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
+            <line x1="17" y1="20" x2="23" y2="20" stroke="#1C3A2F" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="7"  y1="20" x2="4"  y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
+            <line x1="33" y1="20" x2="36" y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>LangChain</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="15" fill="#009688" opacity="0.12" stroke="#009688" stroke-width="1.2"/>
+            <path d="M22 8 L14 22 L20 22 L18 32 L26 18 L20 18 Z" fill="#009688"/>
+          </svg>
+          <span>FastAPI</span>
+        </div>
+
+        <!-- === SET 2 (Duplicate for Seamless Loop) === -->
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="16" fill="#EDF2F7" stroke="#A0AEC0" stroke-width="1.2"/>
+            <path d="M10 25 Q15 11 20 20 Q25 29 30 15" stroke="#F7931E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="2.8" fill="#29ABE2"/>
+          </svg>
+          <span>Scikit-Learn</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="32" height="32" rx="3" fill="#4B8BBE" opacity="0.12" stroke="#4B8BBE" stroke-width="1.2"/>
+            <rect x="9" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
+            <rect x="22" y="13" width="9" height="9" rx="1" fill="#4B8BBE" opacity="0.8"/>
+            <rect x="15.5" y="19" width="9" height="9" rx="1" fill="#013243"/>
+          </svg>
+          <span>NumPy</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="13" y="4" width="6" height="17" rx="3" fill="#130754"/>
+            <rect x="21" y="10" width="6" height="17" rx="3" fill="#E70488"/>
+            <rect x="13" y="23" width="6" height="13" rx="3" fill="#130754" opacity="0.4"/>
+            <rect x="21" y="29" width="6" height="7" rx="3" fill="#E70488" opacity="0.4"/>
+          </svg>
+          <span>Pandas</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4 L20 12 A11 11 0 1 1 11.8 15.8 L15.8 11.8 A6.5 6.5 0 1 0 20 14.5 L20 4Z" fill="#EE4C2C"/>
+            <circle cx="26.5" cy="13.5" r="2.5" fill="#EE4C2C"/>
+          </svg>
+          <span>PyTorch</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" fill="#FF6F00" opacity="0.12" stroke="#FF6F00" stroke-width="1.2"/>
+            <path d="M20 10 L20 30 M12 14.5 L28 14.5 M12 22.5 L28 22.5" stroke="#FF6F00" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span>TensorFlow</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="21" r="13" fill="#FFD21E" opacity="0.2" stroke="#FFD21E" stroke-width="1.2"/>
+            <circle cx="15" cy="18" r="2" fill="#2D2D2D"/>
+            <circle cx="25" cy="18" r="2" fill="#2D2D2D"/>
+            <path d="M14 26 Q20 32 26 26" stroke="#2D2D2D" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M16 10 C16 7 24 7 24 10" stroke="#2D2D2D" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span>HuggingFace</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4C12 4 10 8 10 13L10 17L20 17L20 19L8 19C5 19 4 22 4 27C4 32 6 36 14 36L16 36L16 31C16 28 18 26 20 26L26 26C29 26 30 24 30 21L30 13C30 8 28 4 20 4Z" fill="#3776AB" opacity="0.75"/>
+            <path d="M20 36C28 36 30 32 30 27L30 23L20 23L20 21L32 21C35 21 36 18 36 13C36 8 34 4 26 4L24 4L24 9C24 12 22 14 20 14L14 14C11 14 10 17 10 20L10 27C10 32 12 36 20 36Z" fill="#FFD43B" opacity="0.8"/>
+            <circle cx="16.5" cy="8.5" r="1.5" fill="white"/>
+            <circle cx="23.5" cy="31.5" r="1.5" fill="white"/>
+          </svg>
+          <span>Python</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 31 L13 11 L20 25 L27 15 L34 31" stroke="#0194E2" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="6"  cy="31" r="2.5" fill="#0194E2"/>
+            <circle cx="34" cy="31" r="2.5" fill="#0194E2"/>
+            <circle cx="20" cy="25" r="2"   fill="#0194E2"/>
+          </svg>
+          <span>MLflow</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="16" width="22" height="14" rx="3" fill="#2496ED" opacity="0.15" stroke="#2496ED" stroke-width="1.2"/>
+            <rect x="8"  y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
+            <rect x="14" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
+            <rect x="20" y="19" width="4" height="4" rx="0.5" fill="#2496ED"/>
+            <rect x="8"  y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
+            <rect x="14" y="13" width="4" height="4" rx="0.5" fill="#2496ED" opacity="0.6"/>
+            <path d="M30 22 C34 22 36 19 34 16 C33 14 30 14 29 15" stroke="#2496ED" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span>Docker</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 26 C8 24 6 20 8 16 C9 13 12 11 15 11.5 C16 9 18 7 21 7 C25 7 28 10 28 14 C30 14 33 16 33 19 C33 22 30 24 28 24 L12 24Z" fill="#FF9900" opacity="0.15" stroke="#FF9900" stroke-width="1.2"/>
+            <path d="M10 30 Q20 35 30 30" stroke="#FF9900" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M27 28 L30 30 L28 33" stroke="#FF9900" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>AWS</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
+            <circle cx="28" cy="20" r="5" fill="none" stroke="#1C3A2F" stroke-width="2"/>
+            <line x1="17" y1="20" x2="23" y2="20" stroke="#1C3A2F" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="7"  y1="20" x2="4"  y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
+            <line x1="33" y1="20" x2="36" y2="20" stroke="#1C3A2F" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>LangChain</span>
+        </div>
+        <div class="tech-badge glass-card">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="15" fill="#009688" opacity="0.12" stroke="#009688" stroke-width="1.2"/>
+            <path d="M22 8 L14 22 L20 22 L18 32 L26 18 L20 18 Z" fill="#009688"/>
+          </svg>
+          <span>FastAPI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ABOUT ──────────────────────────────── -->
+    <section class="section about" id="about">
+      <div class="about-bg-title-wrapper">
+        <span class="about-bg-title">ABOUT ME</span>
+      </div>
+      <div class="about-img-wrap reveal">
+        <div class="about-img-card glass-card">
+          <img src="images/profile_photo.jpg" alt="Prashant Kumar Profile Photo" />
+        </div>
+        <div class="about-burst"></div>
+      </div>
+      <div class="about-content reveal">
+        <p class="section-label">AI Developer | Machine Learning | Web Developer</p>
+        <h2 class="section-title">Prashant <em>Kumar</em></h2>
         <div class="divider"></div>
+        <p class="about-body">
+          I'm a B.Tech Computer Science student passionate about Artificial Intelligence, Machine Learning, and Full-Stack Development. I enjoy building intelligent applications that solve real-world problems using predictive models, data analysis, and scalable web technologies. My goal is to build AI-powered software that creates real impact while continuously expanding my expertise in machine learning and modern AI systems.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-item"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="skill-item"><i class="fa-solid fa-brain"></i> Machine Learning</div>
+          <div class="skill-item"><i class="fa-solid fa-chart-line"></i> Scikit-learn</div>
+          <div class="skill-item"><i class="fa-solid fa-server"></i> Flask &amp; FastAPI (Basics)</div>
+          <div class="skill-item"><i class="fa-solid fa-database"></i> SQL</div>
+          <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript (Basics)</div>
+          <div class="skill-item"><i class="fa-solid fa-eye"></i> Computer Vision</div>
+          <div class="skill-item"><i class="fa-solid fa-fire"></i> PyTorch (Basics)</div>
+          <div class="skill-item"><i class="fa-solid fa-robot"></i> LLMs (Basics)</div>
+          <div class="skill-item"><i class="fa-brands fa-aws"></i> AWS EC2</div>
+          <div class="skill-item"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</div>
+          <div class="skill-item"><i class="fa-solid fa-network-wired"></i> REST APIs</div>
+        </div>
+        <a href="#contact" class="btn-secondary" style="margin-top:1.5rem;display:inline-flex;">
+          <span>Work with me</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-    </div>
+    </section>
 
-    <!-- ── 3 always-visible cards ── -->
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="images/aqi_project.jpg">
-        </div>
-        <div class="project-body">
-          <p class="project-category">Full-Stack | Machine Learning - Forecasting</p>
-          <h3 class="project-title">AQI Smart Health Advisor</h3>
-          <p class="project-desc">Monitors real-time air quality across 10,000+ cities with AI-powered health recommendations. It explains pollution levels and helps users make informed decisions about outdoor activities and health protection.</p>
-          <a href="https://aqi.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">View project</a>
-        </div>
+    <!-- ── EXPERIENCE & EDUCATION ────────────────── -->
+    <section class="section experience" id="experience">
+      <div class="exp-bg-title-wrapper">
+        <span class="exp-bg-title">EXPERIENCE</span>
       </div>
+      <div class="container">
+        <p class="section-label reveal">Education &amp; Experience</p>
+        <h2 class="section-title reveal">Education &amp; <em>Journey</em></h2>
+        <div class="divider reveal"></div>
 
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="images/business_inspector_project.jpg">
-        </div>
-        <div class="project-body">
-          <p class="project-category">Full-Stack | Data Analysis | Machine Learning - Forecasting & Churns</p>
-          <h3 class="project-title">Real-Time Object Detection System</h3>
-          <p class="project-desc">Business Inspector is an AI-powered platform that transforms sales and customer data into actionable insights. It helps businesses identify high-value customers, predict revenue, reduce churn, and make data-driven decisions through interactive dashboards.</p>
-          <a href="https://inspector.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">View project</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="images/seic_project.jpg">
-        </div>
-        <div class="project-body">
-          <p class="project-category">Full-Stack | Python, Flask, PostgreSQL, LLM</p>
-          <h3 class="project-title">SEIC - Smart Entrepreneur Investor Connect</h3>
-          <p class="project-desc">Built a platform enabling structured networking between entrepreneurs and investors. Developed secure data handling workflows with authentication, RESTful APIs, and scalable database schemas to enhance matchmaking efficiency.</p>
-          <a href="#" class="project-link">View project</a>
-        </div>
-      </div>
-    </div>
-<!-- currently i have onlhy two project show that why I am making other project div comment. Do not delete these -->
- <!-- 
-    ── extra projects (hidden until expanded) ──
-    <div class="projects-extra" id="projectsExtra">
-      <div class="project-card reveal-extra">
-        <div class="project-img">
-          <div class="project-img-placeholder" style="height:100%;font-size:0.85rem;font-family:var(--font-body);color:var(--bark-dk);">Project image</div>
-        </div>
-        <div class="project-body">
-          <p class="project-category">MLOps · Infrastructure</p>
-          <h3 class="project-title">Automated ML Training Platform</h3>
-          <p class="project-desc">Built a self-service training platform on AWS using SageMaker Pipelines, reducing experiment setup time from days to minutes for a team of 12 data scientists.</p>
-          <a href="#" class="project-link">View project</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal-extra">
-        <div class="project-img">
-          <div class="project-img-placeholder" style="height:100%;font-size:0.85rem;font-family:var(--font-body);color:var(--bark-dk);">Project image</div>
-        </div>
-        <div class="project-body">
-          <p class="project-category">Recommender System</p>
-          <h3 class="project-title">Personalized Content Engine</h3>
-          <p class="project-desc">Developed a two-tower neural recommendation model with real-time feature serving. Increased CTR by 22% in A/B tests across 5M daily active users.</p>
-          <a href="#" class="project-link">View project</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal-extra">
-        <div class="project-img">
-          <div class="project-img-placeholder" style="height:100%;font-size:0.85rem;font-family:var(--font-body);color:var(--bark-dk);">Project image</div>
-        </div>
-        <div class="project-body">
-          <p class="project-category">Speech · Audio</p>
-          <h3 class="project-title">Multilingual Speech Recognition</h3>
-          <p class="project-desc">Fine-tuned Whisper Large-v3 on low-resource Indian languages, achieving 18% WER improvement. Deployed as a real-time transcription API serving 500 req/s.</p>
-          <a href="#" class="project-link">View project</a>
-        </div>
-      </div>
-    </div>
-
-    ── show all / collapse button ──
-    <div class="projects-toggle-wrap">
-      <button class="btn-show-more" id="projectsToggle" aria-expanded="false">
-        <span class="label">Show All Projects</span>
-        <span class="arrow">&#8964;</span>
-      </button>
-    </div> -->
-    </div>
-  </section>
-
-  <!-- ── TESTIMONIAL ────────────────────────── -->
-  <div class="testimonial">
-    <blockquote class="reveal">
-      "An exceptional engineer who consistently delivers production-grade ML systems on time and with remarkable clarity of thought."
-    </blockquote>
-    <cite class="reveal">You just need Passion and Determination</cite>
-  </div>
-
-  <!-- ── RESUME ─────────────────────────────── -->
-  <section class="resume-section" id="resume">
-    <p class="section-label reveal">Credentials</p>
-    <h2 class="section-title reveal">Resume <em>Highlights</em></h2>
-    <div class="divider reveal"></div>
-
-    <div class="resume-inner">
-      <div>
-        <p class="resume-col-title">Education</p>
-        <div class="resume-item reveal">
-          <div class="resume-item-head">
-            <div class="resume-item-title">B.Tech Computer Science &amp; Engineering</div>
-            <div class="resume-item-date">2025 – Present</div>
-          </div>
-          <div class="resume-item-sub">Chandigarh Engineering College, Jhanjeri (CGC University)</div>
-          <div class="resume-item-desc">
-            <strong>CGPA: 8.0</strong><br><br>
-            <strong>Relevant Coursework:</strong>
-            <ul style="padding-left: 1.2rem; margin-top: 0.4rem; list-style-type: disc; color: rgba(253,251,247,0.94);">
-              <li style="margin-bottom: 0.3rem;">Artificial Intelligence</li>
-              <li style="margin-bottom: 0.3rem;">Machine Learning</li>
-              <li style="margin-bottom: 0.3rem;">Data Structures &amp; Algorithms</li>
-              <li style="margin-bottom: 0.3rem;">Database Management Systems</li>
-              <li>Operating Systems</li>
-            </ul>
-          </div>
-        </div>
-
-        <p class="resume-col-title" style="margin-top:2.5rem;">Certifications</p>
-        <div class="resume-item reveal">
-          <div class="resume-item-head">
-            <div class="resume-item-title"><a href="https://www.futureskillsprime.in/iDH/user/credential/verification/32914?cd=26220268184">STEM by NASSCOM</a></div>
-            <div class="resume-item-date">2025</div>
-          </div>
-          <div class="resume-item-sub">Digital Application Fundamentals</div>
-        </div>
-        <div class="resume-item reveal">  
-          <div class="resume-item-head">
-            <div class="resume-item-title"><a href="https://www.hackerrank.com/certificates/fd31aa36115a">Python Specialization</a></div>
-            <div class="resume-item-date">2025</div>
-          </div>
-          <div class="resume-item-sub">Python Certificate by Hacker Rank</div>
-        </div>
-        <!-- <div class="resume-item reveal">
-          <div class="resume-item-head">
-            <div class="resume-item-title">MLOps Specialization</div>
-            <div class="resume-item-date">2022</div>
-          </div>
-          <div class="resume-item-sub">Coursera · DeepLearning.AI</div>
-        </div> -->
-      </div>
-
-      <div>
-        <p class="resume-col-title">Core Competencies</p>
-        <div class="resume-item reveal">
-          <div class="resume-item-title">Machine Learning</div>
-          <div class="resume-item-desc" style="margin-top:0.4rem;">Built predictive machine learning models using Scikit-learn, NumPy, and Pandas for real-world applications involving AQI forecasting, recommendation systems, and business analytics.</div>
-        </div>
-        <div class="resume-item reveal">
-          <div class="resume-item-title">AI Fundamentals</div>
-          <div class="resume-item-desc" style="margin-top:0.4rem;">Good with neural networks - ANNs, RNNs and LSTMs using PyTorch and foundational concepts of Large Language Models, including Transformers.</div>
-        </div>
-        <div class="resume-item reveal">
-          <div class="resume-item-title">Full-Stack Development</div>
-          <div class="resume-item-desc" style="margin-top:0.4rem;">Experience developing end-to-end applications using Flask, JavaScript, HTML, CSS, REST APIs, and PostgreSQL.</div>
-        </div>
-        <div class="resume-item reveal">
-          <div class="resume-item-title">Databases</div>
-          <div class="resume-item-desc" style="margin-top:0.4rem;">PostgreSQL, MySQL, SQL query optimization, schema design, and CRUD operations.</div>
-        </div>
-        <div class="resume-item reveal">
-          <div class="resume-item-title">Tools</div>
-          <div class="resume-item-desc" style="margin-top:0.4rem;">Git, GitHub, AWS EC2, Docker, Nginx, VS Code.</div>
-        </div>
-
-        <p class="resume-col-title" style="margin-top:2.5rem;">Achievements</p>
-        <div class="resume-item reveal">
-          <div class="resume-item-desc" style="margin-top:0.4rem;">
-            <ul style="padding-left: 1.2rem; margin-top: 0.4rem; list-style-type: disc; color: rgba(253,251,247,0.94);">
-              <li style="margin-bottom: 0.5rem;">Top-performing team in the Hack-N-Win Hackathon for innovative use of Google AI.</li>
-              <li style="margin-bottom: 0.5rem;">Ranked 1st in a Kaggle competition.</li>
-              <li>Solved 20+ Data Structures &amp; Algorithms problems on platforms like LeetCode and CodeStudio.</li>
-            </ul>
+        <div class="exp-grid">
+          <div class="exp-item glass-card reveal">
+            <div class="exp-date">2023 — Present</div>
+            <div class="exp-right">
+              <div class="exp-role">B.Tech Computer Science</div>
+              <div class="exp-company">Chandigarh Group of Colleges, Jhanjeri</div>
+              <p class="exp-desc">
+                Pursuing a Bachelor's degree in Computer Science with coursework in Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Artificial Intelligence, and Machine Learning. <br><br>
+                <strong class="highlight-badge"><i class="fa-solid fa-award"></i> CGPA: 8.0</strong>
+              </p>
+              <div class="exp-tags">
+                <span class="exp-tag">Python</span>
+                <span class="exp-tag">JavaScript</span>
+                <span class="exp-tag">C/C++</span>
+                <span class="exp-tag">DBMS</span>
+                <span class="exp-tag">OOP</span>
+                <span class="exp-tag">DSA</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="resume-download reveal">
-      <a href="https://drive.google.com/file/d/1z210_nff-q9jMVr-Kujzx6UfAVVYUFQy/view?usp=drive_link" class="btn-outline-light" target="_blank" rel="noopener noreferrer">Download Full Resume →</a>
-    </div>
-  </section>
-
-  <!-- ── CURRENTLY LEARNING ─────────────────── -->
-  <section class="learning-section" id="learning">
-    <div class="learning-inner reveal">
-      <p class="section-label">Growth</p>
-      <h2 class="section-title">Currently <em>Learning</em></h2>
-      <div class="divider" style="margin: 0 auto 2.5rem;"></div>
-      
-      <div class="learning-grid">
-        <div class="learning-card">PyTorch (Neural Networks)</div>
-        <div class="learning-card">Natual Language Processing (NLP)</div>
-        <div class="learning-card">FastAPI</div>
-        <div class="learning-card">Advanced Machine Learning</div>
+    <!-- ── PROJECTS ───────────────────────────── -->
+    <section class="section projects" id="projects">
+      <div class="work-bg-title-wrapper">
+        <span class="work-bg-title">MY WORK</span>
       </div>
-    </div>
-  </section>
+      <div class="container">
+        <div class="projects-header reveal">
+          <div>
+            <p class="section-label">Portfolio</p>
+            <h2 class="section-title">Top <em>Projects</em></h2>
+            <div class="divider"></div>
+          </div>
+        </div>
 
-  <!-- ── CONTACT CTA ────────────────────────── -->
-  <section class="contact-cta" id="contact">
-    <p class="section-label reveal">Get in Touch</p>
-    <h2 class="section-title reveal">Let's Build Something <em>Meaningful</em></h2>
-    <div class="divider" style="margin:0 auto 1.5rem;"></div>
-    <p class="reveal">Whether you're looking to hire, collaborate on research, or need an AI consultation — I'd love to connect.</p>
-    <div class="hero-btns" style="justify-content:center;" class="reveal">
-      <a href="mailto:you@email.com" class="btn-primary">Say Hello →</a>
-      <a href="https://www.linkedin.com/in/itsprashantkumar/" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-card reveal">
+            <div class="project-img">
+              <img src="images/aqi_project.jpg" alt="AQI Smart Health Advisor Project" />
+            </div>
+            <div class="project-body">
+              <p class="project-category">Full-Stack | Machine Learning - Forecasting</p>
+              <h3 class="project-title">AQI Smart Health Advisor</h3>
+              <p class="project-desc">Monitors real-time air quality across 10,000+ cities with AI-powered health recommendations. It explains pollution levels and helps users make informed decisions about outdoor activities and health protection.</p>
+              <a href="https://aqi.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">
+                <span>View project</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass-card reveal">
+            <div class="project-img">
+              <img src="images/business_inspector_project.jpg" alt="Business Inspector Project" />
+            </div>
+            <div class="project-body">
+              <p class="project-category">Full-Stack | Data Analysis | Machine Learning - Forecasting &amp; Churns</p>
+              <h3 class="project-title">Business Inspector</h3>
+              <p class="project-desc">Business Inspector is an AI-powered platform that transforms sales and customer data into actionable insights. It helps businesses identify high-value customers, predict revenue, reduce churn, and make data-driven decisions through interactive dashboards.</p>
+              <a href="https://inspector.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">
+                <span>View project</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card glass-card reveal">
+            <div class="project-img">
+              <img src="images/seic_project.jpg" alt="SEIC Platform Project" />
+            </div>
+            <div class="project-body">
+              <p class="project-category">Full-Stack | Python, Flask, PostgreSQL, LLM</p>
+              <h3 class="project-title">SEIC - Smart Entrepreneur Investor Connect</h3>
+              <p class="project-desc">Built a platform enabling structured networking between entrepreneurs and investors. Developed secure data handling workflows with authentication, RESTful APIs, and scalable database schemas to enhance matchmaking efficiency.</p>
+              <a href="#" class="project-link">
+                <span>View project</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── AUTHENTIC LINKEDIN SPOTLIGHT HUB ────────────────── -->
+    <section class="section linkedin-section" id="linkedin">
+      <div class="linkedin-bg-title-wrapper">
+        <span class="linkedin-bg-title">LINKEDIN</span>
+      </div>
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <p class="section-label">Official Profile Spotlight</p>
+          <h2 class="section-title"><span class="text-emerald">Connect on</span> <span class="text-gold">LinkedIn</span></h2>
+          <div class="divider margin-auto"></div>
+          <p class="section-subtext">Follow my journey, latest project launches, and AI research updates directly on my official LinkedIn profile.</p>
+        </div>
+
+        <div class="linkedin-spotlight-card glass-card reveal">
+          <div class="spotlight-header">
+            <div class="spotlight-profile">
+              <div class="spotlight-avatar-wrap">
+                <img src="images/profile_photo.jpg" alt="Prashant Kumar LinkedIn Profile Photo" />
+                <span class="linkedin-badge-icon"><i class="fa-brands fa-linkedin"></i></span>
+              </div>
+              <div class="spotlight-meta">
+                <h3 class="spotlight-name">Prashant Kumar <i class="fa-solid fa-circle-check verified-icon" title="Verified Profile"></i></h3>
+                <p class="spotlight-tagline">B.Tech CS Student | AI &amp; Machine Learning Developer | Web Developer</p>
+                <span class="spotlight-location"><i class="fa-solid fa-graduation-cap"></i> Chandigarh Group of Colleges, Jhanjeri · Punjab, India</span>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/itsprashantkumar/" target="_blank" rel="noopener noreferrer" class="btn-linkedin-connect">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="spotlight-highlights-grid">
+            <div class="spotlight-box">
+              <div class="spotlight-box-icon"><i class="fa-solid fa-code-branch"></i></div>
+              <h4>ML &amp; Web Systems</h4>
+              <p>Updates on AQI Forecasting, Business Inspector Analytics, and LLM integrations.</p>
+            </div>
+            <div class="spotlight-box">
+              <div class="spotlight-box-icon"><i class="fa-solid fa-trophy"></i></div>
+              <h4>Hackathons &amp; Kaggle</h4>
+              <p>Top-performing Hack-N-Win team (Google AI) and Rank #1 Kaggle competition achievements.</p>
+            </div>
+            <div class="spotlight-box">
+              <div class="spotlight-box-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+              <h4>Continuous Learning</h4>
+              <p>Sharing takeaways on PyTorch, Deep Learning, NLP, and scalable backend architecture.</p>
+            </div>
+          </div>
+
+          <div class="spotlight-footer">
+            <span><i class="fa-solid fa-link"></i> Direct Profile Link: <strong>linkedin.com/in/itsprashantkumar</strong></span>
+            <a href="https://www.linkedin.com/in/itsprashantkumar/" target="_blank" rel="noopener noreferrer" class="spotlight-cta-link">
+              Visit LinkedIn Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIAL ────────────────────────── -->
+    <div class="testimonial glass-card">
+      <blockquote class="reveal">
+        "An exceptional engineer who consistently delivers production-grade ML systems on time and with remarkable clarity of thought."
+      </blockquote>
+      <cite class="reveal">You just need Passion and Determination</cite>
     </div>
-  </section>
+
+    <!-- ── RESUME ─────────────────────────────── -->
+    <section class="section resume-section" id="resume">
+      <div class="resume-bg-title-wrapper">
+        <span class="resume-bg-title">CREDENTIALS</span>
+      </div>
+      <div class="container">
+        <p class="section-label reveal">Credentials</p>
+        <h2 class="section-title reveal">Resume <em>Highlights</em></h2>
+        <div class="divider reveal"></div>
+
+        <div class="resume-inner">
+          <div>
+            <p class="resume-col-title"><i class="fa-solid fa-graduation-cap"></i> Education</p>
+            <div class="resume-item glass-card reveal">
+              <div class="resume-item-head">
+                <div class="resume-item-title">B.Tech Computer Science &amp; Engineering</div>
+                <div class="resume-item-date">2025 – Present</div>
+              </div>
+              <div class="resume-item-sub">Chandigarh Engineering College, Jhanjeri (CGC University)</div>
+              <div class="resume-item-desc">
+                <strong>CGPA: 8.0</strong><br><br>
+                <strong>Relevant Coursework:</strong>
+                <ul class="resume-bullets">
+                  <li>Artificial Intelligence</li>
+                  <li>Machine Learning</li>
+                  <li>Data Structures &amp; Algorithms</li>
+                  <li>Database Management Systems</li>
+                  <li>Operating Systems</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="resume-col-title" style="margin-top:2.5rem;"><i class="fa-solid fa-certificate"></i> Certifications</p>
+            <div class="resume-item glass-card reveal">
+              <div class="resume-item-head">
+                <div class="resume-item-title"><a href="https://www.futureskillsprime.in/iDH/user/credential/verification/32914?cd=26220268184" target="_blank" rel="noopener">STEM by NASSCOM <i class="fa-solid fa-arrow-up-right-from-square inline-icon"></i></a></div>
+                <div class="resume-item-date">2025</div>
+              </div>
+              <div class="resume-item-sub">Digital Application Fundamentals</div>
+            </div>
+            <div class="resume-item glass-card reveal">  
+              <div class="resume-item-head">
+                <div class="resume-item-title"><a href="https://www.hackerrank.com/certificates/fd31aa36115a" target="_blank" rel="noopener">Python Specialization <i class="fa-solid fa-arrow-up-right-from-square inline-icon"></i></a></div>
+                <div class="resume-item-date">2025</div>
+              </div>
+              <div class="resume-item-sub">Python Certificate by HackerRank</div>
+            </div>
+          </div>
+
+          <div>
+            <p class="resume-col-title"><i class="fa-solid fa-gears"></i> Core Competencies</p>
+            <div class="resume-item glass-card reveal">
+              <div class="resume-item-title">Machine Learning</div>
+              <div class="resume-item-desc">Built predictive machine learning models using Scikit-learn, NumPy, and Pandas for real-world applications involving AQI forecasting, recommendation systems, and business analytics.</div>
+            </div>
+            <div class="resume-item glass-card reveal">
+              <div class="resume-item-title">AI Fundamentals</div>
+              <div class="resume-item-desc">Good with neural networks - ANNs, RNNs and LSTMs using PyTorch and foundational concepts of Large Language Models, including Transformers.</div>
+            </div>
+            <div class="resume-item glass-card reveal">
+              <div class="resume-item-title">Full-Stack Development</div>
+              <div class="resume-item-desc">Experience developing end-to-end applications using Flask, JavaScript, HTML, CSS, REST APIs, and PostgreSQL.</div>
+            </div>
+            <div class="resume-item glass-card reveal">
+              <div class="resume-item-title">Databases &amp; Tools</div>
+              <div class="resume-item-desc">PostgreSQL, MySQL, Git, GitHub, AWS EC2, Docker, Nginx, VS Code.</div>
+            </div>
+
+            <p class="resume-col-title" style="margin-top:2.5rem;"><i class="fa-solid fa-trophy"></i> Achievements</p>
+            <div class="resume-item glass-card reveal">
+              <div class="resume-item-desc">
+                <ul class="resume-bullets">
+                  <li>Top-performing team in the Hack-N-Win Hackathon for innovative use of Google AI.</li>
+                  <li>Ranked 1st in a Kaggle competition.</li>
+                  <li>Solved 20+ Data Structures &amp; Algorithms problems on platforms like LeetCode and CodeStudio.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-download reveal">
+          <a href="https://drive.google.com/file/d/1z210_nff-q9jMVr-Kujzx6UfAVVYUFQy/view?usp=drive_link" class="btn-outline-light" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Full Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CURRENTLY LEARNING (3D STACK CARDS) ─────────────────── -->
+    <section class="section learning-section" id="learning">
+      <div class="learning-bg-title-wrapper">
+        <span class="learning-bg-title">GROWTH</span>
+      </div>
+      <div class="container learning-container">
+        <div class="learning-left-col reveal">
+          <p class="section-label">Continuous Growth</p>
+          <h2 class="section-title">Currently <em>Learning</em></h2>
+          <div class="divider"></div>
+          <p class="learning-desc">
+            Technology moves fast, and so do I. Here are the core AI and software architecture domains I am actively expanding my deep expertise in.
+          </p>
+        </div>
+
+        <div class="learning-right-col reveal">
+          <div class="learning-card-stack">
+            <!-- Card 1 -->
+            <div class="stack-card card-1 glass-card">
+              <div class="stack-card-inner">
+                <div class="stack-icon-box"><i class="fa-solid fa-brain"></i></div>
+                <h4 class="stack-card-title">PyTorch &amp; Neural Networks</h4>
+                <p class="stack-card-sub">ANNs, RNNs, LSTMs &amp; Tensor Ops</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="stack-card card-2 glass-card">
+              <div class="stack-card-inner">
+                <div class="stack-icon-box"><i class="fa-solid fa-language"></i></div>
+                <h4 class="stack-card-title">Natural Language Processing</h4>
+                <p class="stack-card-sub">NLP Pipelines, Embeddings &amp; Transformers</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="stack-card card-3 glass-card">
+              <div class="stack-card-inner">
+                <div class="stack-icon-box"><i class="fa-solid fa-bolt"></i></div>
+                <h4 class="stack-card-title">FastAPI &amp; Async Systems</h4>
+                <p class="stack-card-sub">High-Performance Async Microservices</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="stack-card card-4 glass-card">
+              <div class="stack-card-inner">
+                <div class="stack-icon-box"><i class="fa-solid fa-diagram-project"></i></div>
+                <h4 class="stack-card-title">Advanced Machine Learning</h4>
+                <p class="stack-card-sub">Hyperparameter Tuning &amp; MLOps Pipelines</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT & MESSAGE SECTION (REDESIGNED ATTRACTIVE BOX) ── -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-bg-title-wrapper">
+        <span class="contact-bg-title">GET IN TOUCH</span>
+      </div>
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <p class="section-label">Connect &amp; Collaborate</p>
+          <h2 class="section-title">Let's Build Something <em class="text-emerald">Meaningful</em></h2>
+          <div class="divider margin-auto"></div>
+          <p class="section-subtext">Whether you're looking to hire, collaborate on AI research, or discuss a project — send a message below to open your email client directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Rich & Attractive Contact Information Card -->
+          <div class="contact-info glass-card reveal">
+            <div class="contact-info-header">
+              <span class="availability-pill">
+                <span class="pulse-green"></span>
+                <span>OPEN TO WORK &amp; COLLABORATION</span>
+              </span>
+              <h3 class="contact-card-title">Contact Details</h3>
+              <p class="contact-card-desc">Have a question or want to build an intelligent solution together? Reach out directly via any of the channels below.</p>
+            </div>
+
+            <div class="info-tiles-wrapper">
+              <!-- Tile 1: Email -->
+              <div class="info-tile">
+                <div class="tile-icon-box emerald-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="tile-details">
+                  <span class="tile-label">Direct Email</span>
+                  <a href="mailto:itsprashantkumar@gmail.com" class="tile-value" id="emailValue">itsprashantkumar@gmail.com</a>
+                </div>
+                <button type="button" class="copy-email-btn" id="copyEmailBtn" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Tile 2: Location -->
+              <div class="info-tile">
+                <div class="tile-icon-box gold-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="tile-details">
+                  <span class="tile-label">Location &amp; Work Type</span>
+                  <span class="tile-value">Punjab, India · Remote &amp; Onsite</span>
+                </div>
+              </div>
+
+              <!-- Tile 3: Response Speed -->
+              <div class="info-tile">
+                <div class="tile-icon-box emerald-box">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="tile-details">
+                  <span class="tile-label">Fast Response Rate</span>
+                  <span class="tile-value">Typically replies within 24 hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-connect-section">
+              <span class="social-section-label">Connect on Social Networks</span>
+              <div class="social-tiles-grid">
+                <a href="https://www.linkedin.com/in/itsprashantkumar/" target="_blank" rel="noopener noreferrer" class="social-tile linkedin-tile">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square arrow-mini"></i>
+                </a>
+                <a href="https://github.com/Prashant-Kumar-Codes" target="_blank" rel="noopener noreferrer" class="social-tile github-tile">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square arrow-mini"></i>
+                </a>
+                <a href="https://www.kaggle.com/prashantkdev1" target="_blank" rel="noopener noreferrer" class="social-tile kaggle-tile">
+                  <i class="fa-brands fa-kaggle"></i>
+                  <span>Kaggle</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square arrow-mini"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form (Triggers Direct Mail App) -->
+          <form class="contact-form glass-card reveal" id="contact-form">
+            <div class="form-header-badge">
+              <i class="fa-solid fa-paper-plane"></i> Quick Message Sender
+            </div>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" required placeholder="john@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" required placeholder="Project Inquiry / Hiring Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required placeholder="Hello Prashant, I'd like to discuss..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">
+              <span>Send Message (Launch Email)</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ── FOOTER ─────────────────────────────── -->
   <footer>
@@ -600,27 +817,33 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#resume">Resume</a></li>
+          <li><a href="#linkedin">LinkedIn</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Connect</h4>
         <ul>
-          <li><a href="https://github.com/Prashant-Kumar-Codes" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/itsprashantkumar/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://www.kaggle.com/prashantkdev1" target="_blank" rel="noopener">Kaggle</a></li>
+          <li><a href="https://github.com/Prashant-Kumar-Codes" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/itsprashantkumar/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://www.kaggle.com/prashantkdev1" target="_blank" rel="noopener"><i class="fa-brands fa-kaggle"></i> Kaggle</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Prashant Kumar. All rights reserved.</span>
       <div class="footer-socials">
-        <li><a href="https://github.com/Prashant-Kumar-Codes" target="_blank" rel="noopener">GH</a>
+        <a href="https://github.com/Prashant-Kumar-Codes" target="_blank" rel="noopener">GH</a>
         <a href="https://www.linkedin.com/in/itsprashantkumar/" target="_blank" rel="noopener">LI</a>
         <a href="https://www.kaggle.com/prashantkdev1" target="_blank" rel="noopener">KG</a>
       </div>
     </div>
   </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
 </body>
 </html>
