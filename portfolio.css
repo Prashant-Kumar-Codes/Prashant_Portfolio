@@ -535,6 +535,12 @@ section { padding: 7rem 6%; position: relative; overflow-x: hidden; }
 .project-link:hover { gap: 0.85rem; color: var(--bark-dk); transform: scale(1.12); }
 .project-link::after { content: '→'; font-size: 1.05rem; }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 @media (max-width: 1000px) {
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
 }
