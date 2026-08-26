@@ -199,13 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Show Modal
         projectModalBackdrop.classList.add('open');
-        // document.body.style.overflow = 'hidden'; // Commented out: Prevent background scrolling jump on mobile/certain browsers
+        document.body.style.overflow = 'hidden';
     }
 
     function closeProjectModal() {
         if (!projectModalBackdrop) return;
         projectModalBackdrop.classList.remove('open');
-        // document.body.style.overflow = '';
+        document.body.style.overflow = '';
     }
 
     // Modal Trigger Listeners — stopPropagation prevents anchor scroll

@@ -1803,7 +1803,59 @@ section { padding: 7rem 6%; position: relative; overflow-x: hidden; }
   font-weight: 700;
   color: var(--ink);
 }
-  gap: 1.5rem;
+
+/* Modal Responsive */
+@media (max-width: 750px) {
+  .project-modal-backdrop {
+    padding: 0;
+    align-items: flex-end;
+  }
+  .project-modal-dialog {
+    max-height: 92vh;
+    border-radius: 14px 14px 0 0;
+  }
+  .modal-content-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 1.5rem 1.2rem 2rem;
+  }
+  .modal-right-pane {
+    order: -1;
+  }
+  .modal-img-frame {
+    height: 180px;
+    margin-bottom: 0.8rem;
+  }
+  .modal-project-title {
+    font-size: 1.45rem;
+  }
+  .modal-actions-row {
+    flex-wrap: wrap;
+  }
+  .modal-actions-row .btn-primary,
+  .modal-actions-row .btn-secondary {
+    flex: 1;
+    justify-content: center;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content-grid {
+    padding: 1.2rem 1rem 1.8rem;
+  }
+  .modal-project-title {
+    font-size: 1.25rem;
+  }
+  .modal-img-frame {
+    height: 150px;
+  }
+  .modal-specs-box {
+    padding: 0.9rem;
+  }
+  .spec-row {
+    font-size: 0.78rem;
+  }
 }
 
 @media (max-width: 1000px) {
