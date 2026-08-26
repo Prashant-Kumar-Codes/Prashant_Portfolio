@@ -13,8 +13,13 @@
   
   <!-- FontAwesome 6 for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- Devicon for colored tech icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   
-  <link rel="stylesheet" href="portfolio.css?v=4" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/portfolio_favicon.jpg">
+  <!-- css -->
+  <link rel="stylesheet" href="portfolio.css?v=13" />
   <script src="portfolio.js" defer></script>
 </head>
 <body>
@@ -30,6 +35,7 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#resume">Resume</a></li>
@@ -53,66 +59,127 @@
 
     <!-- ── HERO ──────────────────────────────── -->
     <section class="hero" id="home">
-      <div class="hero-bg-name-wrapper">
-        <span class="bg-name-first">PRASHANT</span>
-        <span class="bg-name-last">KUMAR</span>
-      </div>
+      <!-- Subtle Decorative Tech Glow Aura -->
+      <div class="hero-ambient-aura"></div>
 
-      <div class="hero-left">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Available for New Projects &amp; Roles
-        </div>
-        <p class="hero-eyebrow">AI Developer | Machine Learning Developer | Web Developer</p>
-        <h1 class="hero-heading">
-          Building <span class="text-emerald">Intelligent</span><br>
-          <span class="text-gold">Systems</span>
-        </h1>
-        <p class="hero-sub">that actually work.</p>
-        <p class="hero-desc">
-          Turning complex data into production-ready ML models and scalable AI solutions. From research to deployment — I bridge the gap between cutting-edge algorithms and real-world impact.
-        </p>
+      <div class="hero-container">
+        <!-- Hero Content (Left Column) -->
+        <div class="hero-left">
+          <!-- Status Pill -->
+          <div class="hero-badge">
+            <span class="badge-beacon">
+              <span class="beacon-core"></span>
+              <span class="beacon-wave"></span>
+            </span>
+            <span>Available for AI / ML &amp; SDE Roles</span>
+          </div>
 
-        <div class="hero-btns">
-          <a href="#projects" class="btn-primary">
-            <span>View Projects</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <a href="#contact" class="btn-secondary">
-            <span>Get in Touch</span>
-          </a>
+          <!-- Eyebrow Subtitle -->
+          <div class="hero-roles">
+            <span class="role-item"><i class="fa-solid fa-brain"></i> AI &amp; ML Developer</span>
+            <span class="role-bullet">•</span>
+            <span class="role-item"><i class="fa-solid fa-code"></i> Web Developer</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-heading">
+            Building <span class="text-emerald">Intelligent</span><br>
+            <span class="text-gold">Systems &amp; Models</span>
+          </h1>
+
+          <p class="hero-sub">that transform complex data into real-world impact.</p>
+
+          <p class="hero-desc">
+            Computer Science engineer specializing in production-grade Machine Learning, Deep Learning computer vision models, and scalable intelligent web applications.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary hero-btn-main">
+              <span>View Featured Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-secondary hero-btn-sub">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Get in Touch</span>
+            </a>
+            <a href="#resume" class="btn-tertiary hero-btn-cv" title="View Resume">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-stats glass-card">
+            <div class="stat-item">
+              <span class="stat-number" data-target="8.12">8.12</span>
+              <span class="stat-label">CGPA (B.Tech CSE)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5">5+</span>
+              <span class="stat-label">Featured Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">15+</span>
+              <span class="stat-label">ML/DL Models</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="24">24+</span>
+              <span class="stat-label">DSA Solved</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number" data-target="8.12">8.12</span>
-            <span class="stat-label">CGPA (B.Tech CSE)</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="5">5+</span>
-            <span class="stat-label">Featured Projects</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="15+">#1</span>
-            <span class="stat-label">ML/DL Model</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="24">24+</span>
-            <span class="stat-label">DSA Solved</span>
-          </div>
-        </div>
-      </div>
+        <!-- Hero Visual (Right Column) -->
+        <div class="hero-right">
+          <div class="hero-visual-stage">
+            <!-- Ambient Dual-Glow Aura -->
+            <div class="hero-glow-layer"></div>
 
-      <div class="hero-right">
-        <div class="hero-img-card glass-card">
-          <div class="hero-img-wrap">
-            <img src="images/hero_img.jpg" alt="Modern AI" />
+            <!-- Avatar Centerpiece Card -->
+            <div class="hero-img-card glass-card">
+              <div class="hero-img-wrap">
+                <img src="images/hero_img.jpg" alt="Prashant Kumar - Modern AI" />
+              </div>
+            </div>
+
+            <!-- Floating Interactive Card 1: Deep Learning -->
+            <div class="floating-chip chip-dl glass-card">
+              <div class="chip-icon dl-icon">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="chip-text">
+                <span class="chip-title">Deep Learning</span>
+                <span class="chip-subtitle">PyTorch • CNNs • NLP</span>
+              </div>
+            </div>
+
+            <!-- Floating Interactive Card 2: GenAI -->
+            <div class="floating-chip chip-genai glass-card">
+              <div class="chip-icon genai-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="chip-text">
+                <span class="chip-title">GenAI &amp; LLMs</span>
+                <span class="chip-subtitle">RAG • LangChain • FastAPI</span>
+              </div>
+            </div>
+
+            <!-- Floating Interactive Card 3: Status Badge -->
+            <div class="floating-chip chip-status glass-card">
+              <div class="chip-icon status-icon">
+                <i class="fa-solid fa-code-merge"></i>
+              </div>
+              <div class="chip-text">
+                <span class="chip-title">Production AI</span>
+                <span class="chip-subtitle">End-to-End Deployed</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="hero-burst"></div>
       </div>
     </section>
 
@@ -353,56 +420,281 @@
         <p class="about-body">
           I'm a B.Tech Computer Science student passionate about Artificial Intelligence, Machine Learning, and Full-Stack Development. I enjoy building intelligent applications that solve real-world problems using predictive models, data analysis, and scalable web technologies. My goal is to build AI-powered software that creates real impact while continuously expanding my expertise in machine learning and modern AI systems.
         </p>
-        <div class="skills-grid">
-          <div class="skill-item"><i class="fa-brands fa-python"></i> Python</div>
-          <div class="skill-item"><i class="fa-solid fa-brain"></i> Machine Learning</div>
-          <div class="skill-item"><i class="fa-solid fa-chart-line"></i> Scikit-learn</div>
-          <div class="skill-item"><i class="fa-solid fa-server"></i> Flask &amp; FastAPI (Basics)</div>
-          <div class="skill-item"><i class="fa-solid fa-database"></i> SQL</div>
-          <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript (Basics)</div>
-          <div class="skill-item"><i class="fa-solid fa-eye"></i> Computer Vision</div>
-          <div class="skill-item"><i class="fa-solid fa-fire"></i> PyTorch (Basics)</div>
-          <div class="skill-item"><i class="fa-solid fa-robot"></i> LLMs (Basics)</div>
-          <div class="skill-item"><i class="fa-brands fa-aws"></i> AWS EC2</div>
-          <div class="skill-item"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</div>
-          <div class="skill-item"><i class="fa-solid fa-network-wired"></i> REST APIs</div>
+        <div class="about-actions-box">
+          <a href="#contact" class="btn-primary">
+            <span>Work with me</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1z210_nff-q9jMVr-Kujzx6UfAVVYUFQy/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download Resume</span>
+          </a>
         </div>
-        <a href="#contact" class="btn-secondary" style="margin-top:1.5rem;display:inline-flex;">
-          <span>Work with me</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
     </section>
 
-    <!-- ── EXPERIENCE & EDUCATION ────────────────── -->
-    <section class="section experience" id="experience">
-      <div class="exp-bg-title-wrapper">
-        <span class="exp-bg-title">EXPERIENCE</span>
+    <!-- ── NEW SKILLS SECTION (TECH ARSENAL) ────── -->
+    <section class="section skills-section" id="skills">
+      <div class="skills-bg-title-wrapper">
+        <span class="skills-bg-title">SKILLS</span>
       </div>
       <div class="container">
-        <p class="section-label reveal">Education &amp; Experience</p>
-        <h2 class="section-title reveal">Education &amp; <em>Journey</em></h2>
-        <div class="divider reveal"></div>
+        <div class="section-header text-center reveal">
+          <p class="section-label">Tech Arsenal</p>
+          <h2 class="section-title">Skills &amp; <em>Technologies</em></h2>
+          <div class="divider margin-auto"></div>
+          <p class="section-subtext">A categorized overview of core tools, libraries, and frameworks I use to engineer scalable ML models and software systems.</p>
+        </div>
 
-        <div class="exp-grid">
-          <div class="exp-item glass-card reveal">
-            <div class="exp-date">2023 — Present</div>
-            <div class="exp-right">
-              <div class="exp-role">B.Tech Computer Science</div>
-              <div class="exp-company">Chandigarh Group of Colleges, Jhanjeri</div>
-              <p class="exp-desc">
-                Pursuing a Bachelor's degree in Computer Science with coursework in Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Artificial Intelligence, and Machine Learning. <br><br>
-                <strong class="highlight-badge"><i class="fa-solid fa-award"></i> CGPA: 8.0</strong>
-              </p>
-              <div class="exp-tags">
-                <span class="exp-tag">Python</span>
-                <span class="exp-tag">JavaScript</span>
-                <span class="exp-tag">C/C++</span>
-                <span class="exp-tag">DBMS</span>
-                <span class="exp-tag">OOP</span>
-                <span class="exp-tag">DSA</span>
+        <div class="skills-category-grid">
+          <!-- Category 1: Programming -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">Programming</h3>
+                <span class="category-count">5 Technologies</span>
               </div>
             </div>
+            <div class="skill-pills-wrap">
+              <div class="tech-pill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+              <div class="tech-pill"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+              <div class="tech-pill"><i class="devicon-c-plain colored"></i><span>C</span></div>
+              <div class="tech-pill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+              <div class="tech-pill"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Machine Learning & Data -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">Machine Learning &amp; Data</h3>
+                <span class="category-count">7 Technologies</span>
+              </div>
+            </div>
+            <div class="skill-pills-wrap">
+              <div class="tech-pill"><i class="devicon-scikitlearn-plain colored"></i><span>Scikit-Learn</span></div>
+              <div class="tech-pill"><i class="devicon-numpy-plain colored"></i><span>NumPy</span></div>
+              <div class="tech-pill"><i class="devicon-pandas-plain colored"></i><span>Pandas</span></div>
+              <div class="tech-pill"><i class="devicon-matplotlib-plain colored"></i><span>Matplotlib</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-chart-area" style="color: #4C72B0;"></i><span>Seaborn</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-filter" style="color: #2FA38C;"></i><span>Feature Engineering</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-square-poll-vertical" style="color: #E1A534;"></i><span>Model Evaluation</span></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Deep Learning & Vision -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">Deep Learning &amp; AI</h3>
+                <span class="category-count">6 Technologies</span>
+              </div>
+            </div>
+            <div class="skill-pills-wrap">
+              <div class="tech-pill"><i class="devicon-pytorch-original colored"></i><span>PyTorch</span></div>
+              <div class="tech-pill"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span></div>
+              <div class="tech-pill"><i class="devicon-opencv-plain colored"></i><span>OpenCV</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-diagram-project" style="color: #2FA38C;"></i><span>ANNs &amp; CNNs</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-wave-square" style="color: #2FA38C;"></i><span>RNNs &amp; LSTMs</span></div>
+              <div class="tech-pill"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" style="width:16px; height:16px;" alt="Keras"/><span>Keras</span></div>
+            </div>
+          </div>
+
+          <!-- Category 4: LLMs, NLP & GenAI -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">LLMs, NLP &amp; GenAI</h3>
+                <span class="category-count">6 Technologies</span>
+              </div>
+            </div>
+            <div class="skill-pills-wrap">
+              <div class="tech-pill"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" style="width:16px; height:16px;" alt="Hugging Face"/><span>Hugging Face</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-link" style="color: #1C3A2F;"></i><span>LangChain</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-brain" style="color: #2FA38C;"></i><span>RAG Pipelines</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-font" style="color: #2FA38C;"></i><span>NLP Pipelines</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-magnifying-glass-chart" style="color: #00A3E0;"></i><span>FAISS Vector DB</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2FA38C;"></i><span>Prompt Design</span></div>
+            </div>
+          </div>
+
+          <!-- Category 5: Web & Backend -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">Web &amp; Backend</h3>
+                <span class="category-count">6 Technologies</span>
+              </div>
+            </div>
+            <div class="skill-pills-wrap">
+              <div class="tech-pill"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+              <div class="tech-pill"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
+              <div class="tech-pill"><i class="fa-solid fa-arrows-split-up-and-left" style="color: #00599C;"></i><span>RESTful APIs</span></div>
+              <div class="tech-pill"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+              <div class="tech-pill"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+              <div class="tech-pill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            </div>
+          </div>
+
+          <!-- Category 6: Cloud, DevOps & Tools -->
+          <div class="skill-category-card glass-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">Cloud, DevOps &amp; Tools</h3>
+                <span class="category-count">7 Technologies</span>
+              </div>
+            </div>
+            <div class="skill-pills-wrap">
+              <div class="tech-pill"><i class="devicon-github-original colored"></i><span>Git &amp; GitHub</span></div>
+              <div class="tech-pill"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+              <div class="tech-pill"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS EC2</span></div>
+              <div class="tech-pill"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+              <div class="tech-pill"><i class="devicon-linux-plain colored"></i><span>Linux / Bash</span></div>
+              <div class="tech-pill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+              <div class="tech-pill"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL &amp; MySQL</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE & EDUCATION (SCROLL TIMELINE) ── -->
+    <section class="section experience" id="experience">
+      <div class="exp-bg-title-wrapper">
+        <span class="exp-bg-title">JOURNEY</span>
+      </div>
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <p class="section-label">Education &amp; Experience</p>
+          <h2 class="section-title">Academic <em>Journey</em></h2>
+          <div class="divider margin-auto"></div>
+          <p class="section-subtext">A chronological overview of my educational milestones, competitive achievements, and technical growth.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Animated Center Progress Line -->
+          <div class="timeline-line-track">
+            <div class="timeline-line-progress" id="timelineProgress"></div>
+          </div>
+
+          <div class="timeline-items">
+            
+            <!-- Milestone 1 -->
+            <div class="timeline-item timeline-left reveal" data-step="1">
+              <div class="timeline-node">
+                <span class="node-dot"></span>
+                <i class="fa-solid fa-graduation-cap node-icon"></i>
+              </div>
+              <div class="timeline-card glass-card">
+                <div class="card-meta">
+                  <span class="meta-pill year-pill">2025 — Present</span>
+                  <span class="meta-pill location-pill"><i class="fa-solid fa-location-dot"></i> Mohali / Punjab, India</span>
+                </div>
+                <h3 class="timeline-title">Bachelor of Technology (Computer Science &amp; Engineering)</h3>
+                <h4 class="timeline-institution">Chandigarh Group of Colleges, Jhanjeri (CGC University)</h4>
+                
+                <div class="grade-badge">
+                  <i class="fa-solid fa-award"></i>
+                  <span>CGPA: 8.12 / 10.0</span>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li><i class="fa-solid fa-circle-check"></i> Specialization in Artificial Intelligence and Machine Learning.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Core coursework: Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Computer Networks, and AI.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Developed production-ready machine learning models, NLP pipelines, and full-stack web platforms.</li>
+                </ul>
+
+                <div class="timeline-tags">
+                  <span class="t-tag">Python</span>
+                  <span class="t-tag">Machine Learning</span>
+                  <span class="t-tag">Deep Learning</span>
+                  <span class="t-tag">DSA</span>
+                  <span class="t-tag">DBMS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="timeline-item timeline-right reveal" data-step="2">
+              <div class="timeline-node">
+                <span class="node-dot"></span>
+                <i class="fa-solid fa-trophy node-icon"></i>
+              </div>
+              <div class="timeline-card glass-card">
+                <div class="card-meta">
+                  <span class="meta-pill year-pill">2025</span>
+                  <span class="meta-pill highlight-pill"><i class="fa-solid fa-star"></i> Milestone</span>
+                </div>
+                <h3 class="timeline-title">Hackathon Honors &amp; Kaggle Competitions</h3>
+                <h4 class="timeline-institution">Hack-N-Win Hackathon &amp; Kaggle Competitions</h4>
+
+                <div class="grade-badge">
+                  <i class="fa-solid fa-medal"></i>
+                  <span>Top Performing Team (Google AI) &bull; Kaggle Competitions</span>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li><i class="fa-solid fa-circle-check"></i> Recognized among top teams for innovative AI architectures leveraging Google AI tools.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Actively participating in Kaggle competitions, with focus on machine learning and deep learning models and pipeline development.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Built and optimized complex feature engineering and hyperparameter tuning workflows.</li>
+                </ul>
+
+                <div class="timeline-tags">
+                  <span class="t-tag">Kaggle Competitions</span>
+                  <span class="t-tag">Google AI</span>
+                  <span class="t-tag">Hackathon</span>
+                  <span class="t-tag">Model Optimization</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="timeline-item timeline-left reveal" data-step="3">
+              <div class="timeline-node">
+                <span class="node-dot"></span>
+                <i class="fa-solid fa-book-open node-icon"></i>
+              </div>
+              <div class="timeline-card glass-card">
+                <div class="card-meta">
+                  <span class="meta-pill year-pill">2021 — 2023</span>
+                  <span class="meta-pill location-pill"><i class="fa-solid fa-school"></i> CBSE Board</span>
+                </div>
+                <h3 class="timeline-title">Senior Secondary Education (Class XII)</h3>
+                <h4 class="timeline-institution">Central Board of Secondary Education</h4>
+
+                <ul class="timeline-bullets">
+                  <li><i class="fa-solid fa-circle-check"></i> Completed Senior Secondary education with Non-Medical Science stream.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Strong foundation in Mathematics (Calculus, Probability, Linear Algebra) and Computer Science.</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Developed core analytical thinking and algorithmic problem-solving habits.</li>
+                </ul>
+
+                <div class="timeline-tags">
+                  <span class="t-tag">Mathematics</span>
+                  <span class="t-tag">Physics</span>
+                  <span class="t-tag">Computer Science</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -424,7 +716,7 @@
 
         <div class="projects-grid">
           <!-- Project 1 -->
-          <div class="project-card glass-card reveal">
+          <div class="project-card glass-card reveal" data-project-id="aqi">
             <div class="project-img">
               <img src="images/aqi_project.jpg" alt="AQI Smart Health Advisor Project" />
             </div>
@@ -432,14 +724,20 @@
               <p class="project-category">Full-Stack | Machine Learning - Forecasting</p>
               <h3 class="project-title">AQI Smart Health Advisor</h3>
               <p class="project-desc">Monitors real-time air quality across 10,000+ cities with AI-powered health recommendations. It explains pollution levels and helps users make informed decisions about outdoor activities and health protection.</p>
-              <a href="https://aqi.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">
-                <span>View project</span>
-              </a>
+              <div class="project-actions-row">
+                <button type="button" class="btn-project-details" data-open-project="aqi">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Details</span>
+                </button>
+                <a href="https://aqi.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">
+                  <span>Live demo</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="project-card glass-card reveal">
+          <div class="project-card glass-card reveal" data-project-id="inspector">
             <div class="project-img">
               <img src="images/business_inspector_project.jpg" alt="Business Inspector Project" />
             </div>
@@ -447,14 +745,20 @@
               <p class="project-category">Full-Stack | Data Analysis | Machine Learning - Forecasting &amp; Churns</p>
               <h3 class="project-title">Business Inspector</h3>
               <p class="project-desc">Business Inspector is an AI-powered platform that transforms sales and customer data into actionable insights. It helps businesses identify high-value customers, predict revenue, reduce churn, and make data-driven decisions through interactive dashboards.</p>
-              <a href="https://inspector.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">
-                <span>View project</span>
-              </a>
+              <div class="project-actions-row">
+                <button type="button" class="btn-project-details" data-open-project="inspector">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Details</span>
+                </button>
+                <a href="https://inspector.prashantbuilds.in/" target="_blank" rel="noopener" class="project-link">
+                  <span>Live demo</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Project 3 -->
-          <div class="project-card glass-card reveal">
+          <div class="project-card glass-card reveal" data-project-id="seic">
             <div class="project-img">
               <img src="images/seic_project.jpg" alt="SEIC Platform Project" />
             </div>
@@ -462,14 +766,20 @@
               <p class="project-category">Full-Stack | Python, Flask, PostgreSQL, LLM</p>
               <h3 class="project-title">SEIC - Smart Entrepreneur Investor Connect</h3>
               <p class="project-desc">Built a platform enabling structured networking between entrepreneurs and investors. Developed secure data handling workflows with authentication, RESTful APIs, and scalable database schemas to enhance matchmaking efficiency.</p>
-              <a href="#" class="project-link">
-                <span>View project</span>
-              </a>
+              <div class="project-actions-row">
+                <button type="button" class="btn-project-details" data-open-project="seic">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Details</span>
+                </button>
+                <a href="https://github.com/Prashant-Kumar-Codes" target="_blank" rel="noopener" class="project-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Project 4 -->
-          <div class="project-card glass-card reveal">
+          <div class="project-card glass-card reveal" data-project-id="nlp">
             <div class="project-img">
               <img src="images/Text_Classification.jpg" alt="Text Classification Projects" />
             </div>
@@ -477,19 +787,20 @@
               <p class="project-category">Machine Learning | NLP | Text Classification</p>
               <h3 class="project-title">Text Classification Projects</h3>
               <p class="project-desc">A collection of Natural Language Processing models designed to classify text data. Features models for sentiment analysis of text inputs and automated spam detection systems.</p>
-              <div class="project-links">
+              <div class="project-actions-row">
+                <button type="button" class="btn-project-details" data-open-project="nlp">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Details</span>
+                </button>
                 <a href="https://github.com/Prashant-Kumar-Codes/NLP/tree/main/7_NLP_Projects/1_Text_Classification/1_Sentiment_Analysis" target="_blank" rel="noopener" class="project-link">
-                  <i class="fa-brands fa-github"></i> <span>Sentiment Analysis</span>
-                </a>
-                <a href="https://github.com/Prashant-Kumar-Codes/NLP/tree/main/7_NLP_Projects/1_Text_Classification/2_Spam_Detection" target="_blank" rel="noopener" class="project-link">
-                  <i class="fa-brands fa-github"></i> <span>Spam Detection</span>
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
           </div>
 
           <!-- Project 5 -->
-          <div class="project-card glass-card reveal">
+          <div class="project-card glass-card reveal" data-project-id="prediction">
             <div class="project-img">
               <img src="images/Machine_Learning_Prediction.jpg" alt="Machine Learning Prediction Models" />
             </div>
@@ -497,12 +808,13 @@
               <p class="project-category">Machine Learning | Scikit-Learn | Predictions</p>
               <h3 class="project-title">Machine Learning Prediction Models</h3>
               <p class="project-desc">Predictive machine learning models built using Scikit-Learn. Features models developed for accurate flood forecasting and prediction, as well as agricultural irrigation scheduling optimization.</p>
-              <div class="project-links">
+              <div class="project-actions-row">
+                <button type="button" class="btn-project-details" data-open-project="prediction">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Details</span>
+                </button>
                 <a href="https://github.com/Prashant-Kumar-Codes/Machine-Learning-With-Scikit-Learn/tree/main/Projects/Codes/3_Flood_Prediction" target="_blank" rel="noopener" class="project-link">
-                  <i class="fa-brands fa-github"></i> <span>Flood Prediction</span>
-                </a>
-                <a href="https://github.com/Prashant-Kumar-Codes/Machine-Learning-With-Scikit-Learn/tree/main/Projects/Codes/4_Irrigation_Prediction" target="_blank" rel="noopener" class="project-link">
-                  <i class="fa-brands fa-github"></i> <span>Irrigation Prediction</span>
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
@@ -511,6 +823,69 @@
 
       </div>
     </section>
+
+    <!-- ── PROJECT DETAILS MODAL POPUP ────────── -->
+    <div class="project-modal-backdrop" id="projectModalBackdrop">
+      <div class="project-modal-dialog glass-card" id="projectModalDialog">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Project Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-content-grid">
+          <!-- Left Column: Rich Text, Details, Features & Links -->
+          <div class="modal-left-pane">
+            <div class="modal-category-badge" id="modalCategory">Full-Stack | Machine Learning</div>
+            <h2 class="modal-project-title" id="modalTitle">AQI Smart Health Advisor</h2>
+
+            <div class="modal-section-block">
+              <h4 class="modal-subheading">DESCRIPTION</h4>
+              <p class="modal-description-text" id="modalDescription">
+                A production-grade web platform and predictive machine learning engine designed to monitor real-time air pollution levels across global cities, offering proactive health alerts and forecasting trends.
+              </p>
+            </div>
+
+            <div class="modal-section-block">
+              <h4 class="modal-subheading">KEY FEATURES</h4>
+              <ul class="modal-features-list" id="modalFeatures">
+                <!-- Injected via JavaScript -->
+              </ul>
+            </div>
+
+            <div class="modal-section-block">
+              <h4 class="modal-subheading">TECHNOLOGIES &amp; ARCHITECTURE</h4>
+              <div class="modal-tech-pills" id="modalTechTags">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <div class="modal-actions-row" id="modalActions">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Preview & Specs -->
+          <div class="modal-right-pane">
+            <div class="modal-img-frame">
+              <img id="modalImage" src="images/aqi_project.jpg" alt="Project Preview" />
+            </div>
+            <div class="modal-specs-box glass-card">
+              <div class="spec-row">
+                <span class="spec-label"><i class="fa-solid fa-user-gear"></i> Role:</span>
+                <span class="spec-value" id="modalRole">Lead Developer &amp; ML Engineer</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label"><i class="fa-solid fa-circle-check"></i> Status:</span>
+                <span class="spec-value" id="modalStatus">Deployed &amp; Live</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label"><i class="fa-solid fa-chart-line"></i> Domain:</span>
+                <span class="spec-value" id="modalDomain">Environmental AI &amp; Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ────────────────── AUTHENTIC LINKEDIN SPOTLIGHT HUB ────────────────── -->
     <section class="section linkedin-section" id="linkedin">
@@ -553,7 +928,7 @@
             <div class="spotlight-box">
               <div class="spotlight-box-icon"><i class="fa-solid fa-trophy"></i></div>
               <h4>Hackathons &amp; Kaggle</h4>
-              <p>Top-performing Hack-N-Win team (Google AI) and Rank #1 Kaggle competition achievements.</p>
+              <p>Top-performing Hack-N-Win team (Google AI) and participating in Kaggle competitions.</p>
             </div>
             <div class="spotlight-box">
               <div class="spotlight-box-icon"><i class="fa-solid fa-book-open-reader"></i></div>
@@ -653,7 +1028,7 @@
               <div class="resume-item-desc">
                 <ul class="resume-bullets">
                   <li>Top-performing team in the Hack-N-Win Hackathon for innovative use of Google AI.</li>
-                  <li>Ranked 1st in a Kaggle competition.</li>
+                  <li>Actively participating in Kaggle competition.</li>
                   <li>Solved 20+ Data Structures &amp; Algorithms problems on platforms like LeetCode and CodeStudio.</li>
                 </ul>
               </div>
@@ -830,7 +1205,7 @@
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" rows="5" required placeholder="Hello Prashant, I'd like to discuss..."></textarea>
+              <textarea id="message" rows="3" required placeholder="Hello Prashant, I'd like to discuss..."></textarea>
             </div>
             <button type="submit" class="btn-primary submit-btn">
               <span>Send Message (Launch Email)</span>
