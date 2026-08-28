@@ -8,10 +8,8 @@ LABEL description="Static portfolio site served via Nginx"
 
 RUN rm -rf /usr/share/nginx/html/*
 
-COPY portfolio.html /usr/share/nginx/html/index.html
-COPY portfolio.css  /usr/share/nginx/html/portfolio.css
-COPY portfolio.js   /usr/share/nginx/html/portfolio.js
-COPY images/ /usr/share/nginx/html/images/
+COPY index.html /usr/share/nginx/html/index.html
+COPY assets/ /usr/share/nginx/html/assets/
 
 RUN cat > /etc/nginx/conf.d/default.conf << 'EOF'
 server {
