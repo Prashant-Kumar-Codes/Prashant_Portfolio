@@ -1267,11 +1267,25 @@ body .body-overlay {
 .contact-area .contact-content #required-msg {
     color: #fc4545;
     font-size: 14px;
-    margin-bottom: 31px;
+    margin-bottom: 20px;
     display: none;
 }
 .contact-area .contact-content #required-msg.show {
     display: block;
+}
+.contact-area .contact-content .contact-form .messenger-box-contact__msg {
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    background: rgba(40, 233, 140, 0.1);
+    border: 1px solid var(--primary_color);
+    color: #ffffff;
+}
+.contact-area .contact-content .contact-form input.invalid,
+.contact-area .contact-content .contact-form textarea.invalid {
+    border-bottom: 1px solid #fc4545 !important;
 }
 .contact-area .contact-content .contact-form .input-group {
     margin-bottom: 34px;
