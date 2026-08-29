@@ -396,7 +396,6 @@ function renderProjectModal(projectId) {
 
     container.innerHTML = 
         '<div class="modal-header-meta">' +
-            '<span class="modal-category-badge">' + data.category + '</span>' +
             '<h2 class="modal-project-title">' + data.title + '</h2>' +
         '</div>' +
         '<div class="modal-image-wrap">' +

@@ -674,6 +674,7 @@ main.drake-main {
     max-height: calc(100vh - 28px);
     overflow-y: auto;
     scrollbar-width: none;
+    line-height: 2;    
 }
 .left-sidebar::-webkit-scrollbar {
     display: none;
@@ -880,7 +881,7 @@ body .body-overlay {
 }
 
 
-/* 11 - Resume */
+/* 11 - Resume / Education & Achievements */
 .resume-area {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -888,7 +889,7 @@ body .body-overlay {
 .resume-area .resume-content .resume-timeline .item {
     position: relative;
     padding-left: 74px;
-    padding-bottom: 68px;
+    padding-bottom: 64px;
 }
 .resume-area .resume-content .resume-timeline .item:last-child {
     padding-bottom: 0;
@@ -918,24 +919,65 @@ body .body-overlay {
     transition: .3s;
 }
 .resume-area .resume-content .resume-timeline .item .date {
-    display: block;
-    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 24px;
     transition: .3s;
+    font-size: 14px;
+    color: #999999;
+}
+.resume-area .resume-content .resume-timeline .item .date .category-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #777777;
+    position: relative;
+    padding-left: 12px;
+}
+.resume-area .resume-content .resume-timeline .item .date .category-label::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: #555555;
+    font-size: 14px;
+}
+.resume-area .resume-content .resume-timeline .item:hover .date {
+    color: var(--primary_color);
+}
+.resume-area .resume-content .resume-timeline .item:hover .date .category-label {
+    color: #aaaaaa;
 }
 .resume-area .resume-content .resume-timeline .item h2 {
     font-size: 24px;
     font-weight: 300;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     color: #fff;
 }
 .resume-area .resume-content .resume-timeline .item h2 a {
     color: #fff;
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: .3s;
+}
+.resume-area .resume-content .resume-timeline .item h2 a i {
+    font-size: 15px;
+    color: var(--primary_color);
+    transition: transform 0.3s ease;
+}
+.resume-area .resume-content .resume-timeline .item h2 a:hover {
+    color: var(--primary_color);
+}
+.resume-area .resume-content .resume-timeline .item h2 a:hover i {
+    transform: translate(2px, -2px);
 }
 .resume-area .resume-content .resume-timeline .item p {
     font-size: 13px;
     color: #999999;
     margin-bottom: 18px;
+    line-height: 1.6;
 }
 .resume-area .resume-content .resume-timeline .item p:last-child {
     margin-bottom: 0;
@@ -945,6 +987,22 @@ body .body-overlay {
 }
 .resume-area .resume-content .resume-timeline .item:hover .date {
     color: var(--primary_color);
+}
+.resume-download-wrap {
+    margin-top: 45px;
+}
+.resume-download-wrap .resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 34px;
+    font-size: 15px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+.resume-download-wrap .resume-btn i {
+    font-size: 18px;
 }
 
 
@@ -2066,22 +2124,8 @@ body .body-overlay {
 }
 
 .modal-header-meta {
-    margin-bottom: 16px;
-    padding-right: 50px;
-}
-
-.modal-category-badge {
-    display: inline-block;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--primary_color);
-    border: 1px solid rgba(40, 233, 140, 0.3);
-    background: rgba(40, 233, 140, 0.08);
-    padding: 4px 14px;
-    border-radius: 20px;
     margin-bottom: 12px;
-    font-weight: 600;
+    padding-right: 50px;
 }
 
 .modal-project-title {
@@ -2269,10 +2313,17 @@ body .body-overlay {
     display: inline-block;
     padding: 5px 15px;
     border-radius: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: white;
+    backdrop-filter: blur(10px);
+    color: #000000;
+    font-size: 13px;
+    transition: .3s;
+}
+.portfolio-categories li .badge-cat:hover {
+
+    background: black;
     backdrop-filter: blur(10px);
     color: #ffffff;
-    font-size: 13px;
 }
 
 @media (max-width: 767px) {
